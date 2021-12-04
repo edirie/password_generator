@@ -126,8 +126,11 @@ function generatePassword() {
   }
 
   var newPass = conCharacters.sort(() => Math.random() - Math.random() ).slice(0, length)
+  console.log(newPass)
 
-  return generatePassword;
+  var finalPass = newPass.join("")
+
+  return finalPass;
 }
 
 // Write password to the #password input
